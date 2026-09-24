@@ -1,0 +1,38 @@
+.morph-stage {
+  position: relative;
+  width: 100%;
+}
+
+.morph-stage__sticky {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.morph-card {
+  position: relative;
+  overflow: hidden;
+  background: var(--surface);
+  box-shadow: 0 30px 80px -20px rgba(0, 0, 0, 0.6);
+  will-change: width, height, border-radius;
+}
+
+.morph-card__layer {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.docked-avatar {
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+  background: var(--surface);
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
+}
